@@ -10,22 +10,22 @@ import bgImg from '../assets/cyber-bg.png'
 
 const Hero = () => {
   return (
-    <div className='w-full h-screen pt-20 bg-zinc-200 flex flex-col justify-between'>
+    <div name='home' className='w-full h-screen pt-[80px] md:pt-0 bg-zinc-200 flex flex-col justify-between'>
       <div className='grid md:grid-cols-2 max-w-[1240px] m-auto'>
         <div className='flex flex-col text-center md:text-left justify-center md:items-start w-full px-2 py-8'>
           <p className='text-2xl'> Unicode Sequencing & Production</p>
           <h1 className='py-3 text-5xl md:text-7xl font-bold'>Cloud Management</h1>
           <p className='text-2xl'> This is our Tech brand.</p>
-          <button className='mx-auto md:mx-0 py-3 px-6 sm:w-[60%] my-4'> Get Started</button>
+          <button className='mx-auto md:mx-0 py-3 px-6 w-full md:w-[60%] my-4'>Get Started</button>
         </div>
         <div>
           <img className='w-full' src={bgImg} alt="/" />
         </div>
-        <div className=' absolute flex flex-col py-8 md:min-w-[760px] bottom-[5%]
-        mx-1 md:left-1/2 transform md:-translate-x-1/2  bg-zinc-200 border border-slate-300
+        <div className=' absolute flex flex-col py-8 min-w-[80%] md:min-w-[760px] top-[75%]
+        mx-1  left-1/2 transform -translate-x-1/2  bg-zinc-200/75 border border-slate-300
         rounded-xl text-center shadow-xl'>
           <p>Data Services</p>
-          <div className='flex justify-between flex-wrap px-4'>
+          <div className='grid grid-cols-2 md:grid-cols-4 justify-between px-4'>
             <p className='flex px-4 py-2 text-slate-500'><CloudUploadIcon className='h-6 text-indigo-600' /> App Security</p>
             <p className='flex px-4 py-2 text-slate-500'><DatabaseIcon className='h-6 text-indigo-600' /> Dashboard Design</p>
             <p className='flex px-4 py-2 text-slate-500'><ServerIcon className='h-6 text-indigo-600' /> Cloud Data</p>
